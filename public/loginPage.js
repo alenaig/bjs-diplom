@@ -12,6 +12,6 @@ user.loginFormCallback = function(data) {
 //register
 user.registerFormCallback = function(data) {
     ApiConnector.register(data, response => 
-        response.success ? location.reload() : this.setLoginErrorMessage(response.error)
+        response.success ? location.reload() : this.setRegisterErrorMessage(response.error)
         );
 };
